@@ -1,0 +1,140 @@
+html {
+    overflow-y: scroll; 
+}
+
+textarea, input, button, select {
+	border: 1px solid #DADFCA;
+	padding: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: white;
+}
+
+input:focus, textarea:focus, button:focus, select:focus {
+	border: 1px solid #A6AE8D;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #DADFCB;
+	height: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image:url(/styles/bg_melon.png);
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #454E29;
+	background-color: white;
+}
+
+#top {
+	margin: auto;
+	width: 95%;
+	padding-top: 2px;
+}
+
+#top a {
+	color: #454E29;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#content {
+	margin: auto;
+	width: 99%;
+}
+
+#content h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+#content h1 {
+	font-size: 25px;
+}
+
+#forumListContainer {
+	width: 50%;
+	margin: auto;
+	background-color: white;
+	border: 1px solid #454E29;
+}
+
+#forumListContainer a {
+	color: #454E29;
+}
+
+#forumListContainer h1 {
+	border-bottom: 1px solid #454E29;
+	background-color: #454E29;
+	color: white;
+	margin: 0px;
+	padding: 3px;
+	margin-bottom: 5px;
+	text-align: left;
+	font-size: 15px;
+}
+
+#forumList {
+	float: left;
+	width: 30%;
+	padding-left: 5px;
+}
+
+#forumList a {
+	color: #454E29;
+}
+
+#footer {
+	width: 95%;
+	margin: auto;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+	padding-top: 20px;
+}
+
+.submitTable {
+	background-color: #DADFCB;
+	margin: 4px;
+	color: #454E29;
+	border: 1px solid #454E29;
+	font-weight: bold;
+}
+
+.post a, .box a { color: #0000EE; }
+.post a:hover, .box a:hover { color: #DD0000; }
+.name { color: #117743; font-weight: bold; }
+.subject { color: #DD0000; font-weight: bold; }
+.box a { text-decoration: none; }
+.box {
+	background-color: #DADFCA;
+	border-bottom: 1px solid #454E29;
+	border-right: 1px solid #454E29;
+	padding: 4px;
+	display: inline-table;
+}
+
+#changeStyle {
+	text-align: right;
+}
+
+#changeStyle a, #footer a {
+	color: #454E29;
+}
+
+.quote, .quote a {
+	padding: 4px;
+	color: #789922;
+}
+
+.quote a {
+	text-decoration: underline;
+}
+
+.postingList {
+	font-size: 10px;
+}
