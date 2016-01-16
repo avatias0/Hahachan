@@ -27,9 +27,18 @@
 	
 	// All possible banners. If rotation is allowed, it will display a random one
 	public static $banners = array(
-		'rotate/0.gif',
-		'rotate/1.gif',
-		'rotate/2.gif',
+		'rotate/20.png',
+    'rotate/21.png',
+    'rotate/22.png',
+    'rotate/23.png',
+    'rotate/24.png',
+    'rotate/25.png',
+    'rotate/26.png',
+    'rotate/27.png',
+    'rotate/28.png',
+    'rotate/29.png',
+    'rotate/30.png',
+    'rotate/31.png',
 	);
  }
  
