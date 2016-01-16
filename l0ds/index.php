@@ -449,8 +449,8 @@ header('Content-Type:text/html; charset=UTF-8');
 					if(!empty($resp[$i]['id'])) // If the reply exists...
 					{
 						$ip = isAdmin() ? $resp[$i]['ip'] : '';
-						$thumb = empty($resp[$i]['thumb']) ? '<br /><br />' : '<br /> File: <a target="_blank" href="'.$resp[$i]['image'].'">'.substr($resp[$i]['image'], strlen(IMAGES_FOLDER)+1).'</a> - ('.round(filesize($resp[$i]['image'])/1024).'kb - '.$w.'x'.$h.') <br /> <a href="'.$resp[$i]['image'].'" class="preview"><img border="0" src="'.$resp[$i]['thumb'].'" align="left" style="margin:5px" alt="" width="'.TH_W.'" height="'.TH_H.'" /></a>';
-						echo '<div class="box"><a name="'.$resp[$i]['id'].'"></a><span class="subject">'.$resp[$i]['subject'].'</span> <span class="name"> '.tripcode($resp[$i]['name']).'</span> No. <a class="idLink" href="?reply='.$entry['id'].'">'.$resp[$i]['id'].'</a> [<a href="?delete='.$resp[$i]['id'].'&amp;w=r">Delete</a>] [<a href="?report&amp;post='.$entry['id'].'&amp;reply='.$resp[$i]['id'].'">Report</a>] '.$ip.$thumb.hacode($resp[$i]['comment']).'</div><br /><br />';
+						$thumb = empty($resp[$i]['thumb']) ? '<br />' : '<br /> File: <a target="_blank" href="'.$resp[$i]['image'].'">'.substr($resp[$i]['image'], strlen(IMAGES_FOLDER)+1).'</a> - ('.round(filesize($resp[$i]['image'])/1024).'kb - '.$w.'x'.$h.') <br /> <a href="'.$resp[$i]['image'].'" class="preview"><img border="0" src="'.$resp[$i]['thumb'].'" align="left" style="margin:5px" alt="" width="'.TH_W.'" height="'.TH_H.'" /></a>';
+						echo '<div class="box" style="margin-top:6px;"><a name="'.$resp[$i]['id'].'"></a><span class="subject">'.$resp[$i]['subject'].'</span> <span class="name"> '.tripcode($resp[$i]['name']).'</span> No. <a class="idLink" href="?reply='.$entry['id'].'">'.$resp[$i]['id'].'</a> [<a href="?delete='.$resp[$i]['id'].'&amp;w=r">Delete</a>] [<a href="?report&amp;post='.$entry['id'].'&amp;reply='.$resp[$i]['id'].'">Report</a>] '.$ip.$thumb.hacode($resp[$i]['comment']).'</div><br />';
 					}
 			}
 			
