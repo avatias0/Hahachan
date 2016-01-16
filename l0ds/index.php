@@ -440,7 +440,7 @@ header('Content-Type:text/html; charset=UTF-8');
 				if(count($resp)>REPLIES_SHOWN) {
           $start_reply = count($resp) - REPLIES_SHOWN;
           $end_reply = count($resp);
-					echo '<i>Hiding '.$start_reply.' replies, click Reply to view.</i><br /><br />';
+					echo '<i>Hiding '.$start_reply.' replies, click Reply to view.</i><br />';
         } else {
           $start_reply = 0;
           $end_reply = REPLIES_SHOWN;
@@ -450,7 +450,7 @@ header('Content-Type:text/html; charset=UTF-8');
 					{
 						$ip = isAdmin() ? $resp[$i]['ip'] : '';
 						$thumb = empty($resp[$i]['thumb']) ? '<br />' : '<br /> File: <a target="_blank" href="'.$resp[$i]['image'].'">'.substr($resp[$i]['image'], strlen(IMAGES_FOLDER)+1).'</a> - ('.round(filesize($resp[$i]['image'])/1024).'kb - '.$w.'x'.$h.') <br /> <a href="'.$resp[$i]['image'].'" class="preview"><img border="0" src="'.$resp[$i]['thumb'].'" align="left" style="margin:5px" alt="" width="'.TH_W.'" height="'.TH_H.'" /></a>';
-						echo '<div class="box" style="margin-top:6px;"><a name="'.$resp[$i]['id'].'"></a><span class="subject">'.$resp[$i]['subject'].'</span> <span class="name"> '.tripcode($resp[$i]['name']).'</span> No. <a class="idLink" href="?reply='.$entry['id'].'">'.$resp[$i]['id'].'</a> [<a href="?delete='.$resp[$i]['id'].'&amp;w=r">Delete</a>] [<a href="?report&amp;post='.$entry['id'].'&amp;reply='.$resp[$i]['id'].'">Report</a>] '.$ip.$thumb.hacode($resp[$i]['comment']).'</div><br />';
+						echo '<div class="box" style="margin-top:6px;"><a name="'.$resp[$i]['id'].'"></a><span class="subject">'.$resp[$i]['subject'].'</span> <span class="name"> '.tripcode($resp[$i]['name']).'</span> No. <a class="idLink" href="?reply='.$entry['id'].'">'.$resp[$i]['id'].'</a> [<a href="?delete='.$resp[$i]['id'].'&amp;w=r">Delete</a>] [<a href="?report&amp;post='.$entry['id'].'&amp;reply='.$resp[$i]['id'].'">Report</a>] '.$ip.$thumb.'<span class="comment">'.hacode($resp[$i]['comment']).'</span></div><br />';
 					}
 			}
 			
