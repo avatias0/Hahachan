@@ -1,8 +1,8 @@
 # DO NOT ACTUALLY USE THIS
 Security is written by a monkey, probably.
 
-## HahaChan
-Based off of a script I found called [HaChan](https://code.google.com/p/hachan/) which was still very much in the experimental stage (i.e. half of the features were completely broken).
+## Hahachan
+Based off of a script I found called [Ha Chan](https://code.google.com/p/hachan/) which was still very much in the experimental stage (i.e. half of the features were completely broken).
 The purpose of this fork is to continue development to the state that it is actually usable, and keep the core design philosophy of being easy to install without much configuration.
 
 Changes from original source
